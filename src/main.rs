@@ -7,7 +7,11 @@ fn main() {
 }
 
 fn get_input() -> String {
-    print!("Enter your text: ");
+    // print!("Enter your text: ");
+    // Alternative to printing literal text.  Use an IMMUTABLE variable instead!
+    let prompt = "Enter your text:";
+    print!("{}", prompt);
+
     io::stdout().flush().unwrap();
     let mut val = String::new();
 
